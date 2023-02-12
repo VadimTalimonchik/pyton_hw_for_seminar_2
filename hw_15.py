@@ -7,4 +7,18 @@
 # 5 -> 5 1 6 5 9
 # 1 9
 
-print('hello 15')
+num_wm = int(input('Введите количество арбузов: '))
+
+weight_sec_wm = (int(input('Введите вес арбуза: ')))
+min_wg = max_wg = weight_sec_wm
+
+for i in range(2, num_wm + 1):
+    wg_wm = int(input('Введите вес арбуза: '))
+
+    if min_wg > wg_wm:
+        min_wg = wg_wm
+
+    if max_wg < wg_wm:
+        max_wg = wg_wm
+
+print(f'Меньший по весу арбуз: {min_wg}, больший по весу арбуз: {max_wg}.')
