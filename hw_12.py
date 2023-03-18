@@ -6,4 +6,13 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-print('hello 12')
+print()
+s = int(input('Введите сумму загаданных чисел: '))
+p = int(input('Введите произведение загаданных чисел: '))
+print()
+
+for i in range (s):
+    for j in range (p):
+        if s == i + j and p == i * j:
+            print('Загаданные числа это', i,'и', j)
+print()
