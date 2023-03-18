@@ -6,4 +6,23 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-print('hello')
+print()
+num_coins = int(input('Введите число монеток: '))
+print()
+
+num_heads = 0
+num_tails = 0
+print('Введите положение монеток по порядку (1 - орел, 0 - решка): ')
+for i in range(num_coins):
+    side_coin = int(input())
+    if side_coin == 1:
+        num_heads += 1
+    else:
+        num_tails += 1
+print()
+
+if num_heads > num_tails:
+    print('Необходимо перевернуть', num_tails, 'монеты(у) выпавшие решкой.')
+else:
+    print('Необходимо перевернуть', num_heads, 'монеты(у) выпавшие орлом.')
+print()
