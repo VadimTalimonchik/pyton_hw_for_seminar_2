@@ -7,11 +7,11 @@ n = int(input("Введите число N: "))
 print()
 
 i = 0
-output = ""
+output_num = ""
 while 2 ** i <= n:
-    output += str(i) + ", "
+    output_num += str(i) + ", "
     i += 1
-output = output[:-2]
+output_num = output_num[:-2]
 
-print('Целые степени двойки числа', n,'это:', output)
+print('Целые степени двойки числа', n,'это:', output_num)
 print()
